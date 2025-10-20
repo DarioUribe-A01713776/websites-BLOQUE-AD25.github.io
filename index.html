@@ -1,131 +1,81 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Mi primera página web — Darío</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Prácticas</title>
+
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff4444, #ffcc00);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #fffbea;
+      margin-bottom: 40px;
+    }
+
+    .botones {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    a {
+      background-color: #fff;
+      color: #ff4444;
+      padding: 15px 35px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 30px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #ffcc00;
+      color: #000;
+      transform: scale(1.05);
+      box-shadow: 0 7px 14px rgba(0,0,0,0.4);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9em;
+      color: #fff9d0;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <h1>Esta es mi primera página web</h1>
-  <h2>Hola — soy Darío</h2>
-  <p>Soy de <em>Querétaro</em></p>
-</header>
+  <h1>TAREAS REALIZADAS</h1>
+  <p>Selecciona la práctica que deseas visualizar:</p>
 
+  <div class="botones">
+    <a href="./html/miPrimeraPaginaWeb.html">Práctica 1 — Mi primera página web</a>
+    <a href="./html/practicaEstilos.html">Práctica 2 — Hojas de estilo</a>
+  </div>
 
-  <main>
-    <!-- Sección Messi -->
-    <section>
-      <figure>
-        <img src="img/img-01.jpg" alt="Messi celebrando un gol">
-        <figcaption>Messi en un clásico memorable (Barcelona 3-2).</figcaption>
-      </figure>
-      <p>Soy un apasionado del fútbol. La imagen de arriba muestra un partido histórico donde el <strong>Barcelona</strong> ganó 3-2; Messi anotó el último gol y en su celebración mostró la camiseta — simplemente cine.</p>
-    </section>
-
-    <!-- Sección Rocky -->
-    <section>
-      <figure>
-        <img src="img/img-03.jpg" alt="Rocky, mi película favorita">
-        <figcaption>Tú eres mi Rocky</figcaption>
-      </figure>
-      <p>Mis <strong>películas favoritas</strong> son:</p>
-      <ul>
-        <li>Rocky I</li>
-        <li>Interestelar</li>
-        <li>Los increíbles</li>
-      </ul>
-    </section>
-
-    <!-- Sección Sobre mí -->
-    <section>
-      <h3>Sobre mí y mis objetivos</h3>
-      <p>Me encanta mi carrera: la <strong>programación</strong> me motiva mucho y disfruto dedicarme a ella. Soy curioso y siempre con ganas de aprender. Me considero introvertido, pero cuando conecto con alguien puedo hablar hasta por los codos. Aunque muchos piensan que siempre estoy enojado, en realidad es solo mi expresión facial. También me encanta <em>Harry Potter</em>.</p>
-      <p>Mi objetivo en la universidad es conseguir un <strong>intern en una big tech</strong>, aplicar mis conocimientos y, sobre todo, aprender aún más.</p>
-    </section>
-
-    <!-- Música -->
-    <section>
-      <h3>Música</h3>
-      <p>La música es muy importante para mí. Algunos de mis artistas favoritos:</p>
-      <ul>
-        <li>Bad Bunny</li>
-        <li>Queen</li>
-        <li>Latin Mafia</li>
-        <li>NSQK</li>
-        <li>Luis Miguel</li>
-        <li>Shakira</li>
-        <li>Kanye West</li>
-        <li>y muchos más</li>
-      </ul>
-    </section>
-
-    <!-- Inspiración -->
-    <section>
-      <h3>Personas que me inspiran</h3>
-      <p>Alan Turing siempre ha sido una referencia para mí. En su momento Elon Musk también me inspiró. Me gustaría contribuir —de alguna manera— a la historia de la tecnología.</p>
-    </section>
-
-    <!-- Contenido multimedia -->
-    <section>
-      <h3>Contenido multimedia</h3>
-      <figure>
-        <iframe width="90%" height="480" src="https://www.youtube.com/embed/h4m68r8kWAc?si=8pYSnzLiUBJelqHa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <figcaption>Un video que me gusta.</figcaption>
-      </figure>
-
-      <figure>
-        <iframe src="https://open.spotify.com/embed/album/5K79FLRUCSysQnVESLcTdb?utm_source=generator" width="90%" height="380" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <figcaption>Álbum favorito en Spotify.</figcaption>
-      </figure>
-    </section>
-
-    <!-- Chivas -->
-    <section>
-      <h3>Fútbol — Chivas</h3>
-      <p>Soy <strong>muy fan de las Chivas</strong>.</p>
-      <article>
-        <h4>Mi corazón pintado bicolor</h4>
-        <p><strong>Te quiere ver campeón — Contigo festejar cien años mucho más, celebra el país con fiesta y nada más. Ya me voy para la cancha, ya me voy a ver a Chivas; a mí no me importa nada, Deportivo, ¡yo te quiero!</strong></p>
-      </article>
-      <figure>
-        <img src="img/img-02.jpg" alt="Estadio de las Chivas">
-        <figcaption>El estadio de las Chivas.</figcaption>
-      </figure>
-    </section>
-
-    <!-- Mis perritos -->
-    <section>
-      <h3>Mis perritos</h3>
-      <p>Tengo tres perritos: Zoe, Owen y Bailey. Hace un año falleció Mimi, que era la madre de Owen y Bailey. Todos mis perritos son la adoración de mi vida.</p>
-      <div class="perritos">
-        <figure>
-          <img src="img/img-04.jpg" alt="Zoe">
-          <figcaption>Zoe</figcaption>
-        </figure>
-        <figure>
-          <img src="img/img-05.jpg" alt="Owen">
-          <figcaption>Owen</figcaption>
-        </figure>
-        <figure>
-          <img src="img/img-07.jpg" alt="Bailey">
-          <figcaption>Bailey</figcaption>
-        </figure>
-        <figure>
-          <img src="img/img-06.jpg" alt="Mimi">
-          <figcaption>Mimi</figcaption>
-        </figure>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Por ahora es todo. Si llegaste hasta aquí, ¡gracias por leer!</p>
-    <div class="botones">
-      <a href="https://www.linkedin.com/in/dar%C3%ADo-a-uribe" target="_blank" class="btn btn-linkedin">LinkedIn</a>
-      <a href="https://wa.me/524427830543" target="_blank" class="btn btn-whatsapp">WhatsApp</a>
-    </div>
-  </footer>
+  <footer></footer>
 </body>
 </html>
