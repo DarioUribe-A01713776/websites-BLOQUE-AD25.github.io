@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'ArcadeClassic';
+  src: url('../fonts/ARCADECLASSIC.TTF') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'ArcadeClassic', sans-serif;;
+    background: linear-gradient(135deg, #FF7E00 0%, #FF0000 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s ease-in-out;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+h1 {
+    color: #d59707;
+    font-size: 4.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'ArcadeClassic', sans-serif;;
+}
+
+.main-content {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    background: black;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#personaje {
+    max-width: 250px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#personaje:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.3));
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 90px;
+    height: 90px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: #e8e8e8;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.btn.active {
+    border-color: #f39c12;
+    background: #f39c12;
+    box-shadow: 0 0 20px rgba(243, 156, 18, 0.6);
+}
+
+.info-panel {
+    background: #ecf0f1;
+    border-left: 5px solid #3498db;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#power-info {
+    color: #2c3e50;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+body.theme-default {
+    background-image : url('../img/img-bg-00.jpeg');
+    background-size: cover;        
+    background-position: center;    
+    background-repeat: no-repeat;   
+    background-attachment: fixed; 
+}
+
+body.theme-haduken {
+    background-image : url('../img/img-bg-01.gif');
+    background-size: cover;        
+    background-position: center;    
+    background-repeat: no-repeat;   
+    background-attachment: fixed; 
+}
+
+body.theme-shoryuken {
+    background-image : url('../img/img-bg-02.jpeg');
+    background-size: cover;        
+    background-position: center;    
+    background-repeat: no-repeat;   
+    background-attachment: fixed; 
+}
+
+body.theme-kick {
+    background-image : url('../img/img-bg-03.jpg');
+    background-size: cover;        
+    background-position: center;    
+    background-repeat: no-repeat;   
+    background-attachment: fixed; 
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        min-height: 250px;
+        padding: 15px;
+    }
+
+    #ken {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .power-btn {
+        width: 75px;
+        height: 75px;
+    }
+
+    .power-btn img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .buttons-container {
+        gap: 10px;
+    }
+}
